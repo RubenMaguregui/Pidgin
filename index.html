@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pidgin - Basic Expression Language</title>
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+
+    <script type="text/javascript">
+        System.import('walker').then(function(Walker) {
+            window.Walker = Walker;
+            return System.import('context');
+        }).then(function(Context) {
+            window.Context = Context;
+            return System.import('Parser');
+        }).then(function(Parser) {
+            window.Parser = Parser;
+
+            window.evaluator = new Walker.Evaluator(new Context.ObjectContext({}));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "pidgin",
+  "version": "0.0.1",
+  "description": "A small library for parsing and evaluating a simple expression language",
+  "author": "Rubén Maguregui <ruben.magurgui@gmail.com>",
+  "devDependencies": {
+    "jison": "^0.4.17",
+    "jspm": "0.16.15",
+    "babel": "^5.8.23",
+    "gulp": "^3.8.10",
+    "gulp-babel": "^5.1.0",
+    "gulp-tsb": "^1.10.1",
+    "typescript": "^1.7.5",
+    "pegjs": "^0.9.0",
+    "require-dir": "^0.3.0",
+    "browser-sync": "^2.11.1"
+  },
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
